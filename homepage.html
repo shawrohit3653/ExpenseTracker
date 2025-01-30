@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Expense Tracker</h1>
+        <div class="LogOut">
+            <a href="#chart" class="logout-link">Chart</a>
+        </div> 
+        <div class="LogOut">
+            <a href="homepage.html" class="logout-link">Home</a>
+        </div> 
+        <div class="profile">
+          <img src="AI.avif" alt="Profile Picture"><br>
+          <div class="ai-panel" id="ai-panel">
+            <div class="ai-header">
+              <h3>Ask AI</h3>
+              <button id="close-ai">X</button>
+            </div>
+            <div class="ai-content" id="ai-content"></div>
+            <div class="ai-input">
+              <input type="text" id="ai-query" placeholder="Ask your question...">
+              <button id="send-ai">Send</button>
+            </div>
+          </div>
+        
+          <button id="open-ai" class="ai-button">Ask AI</button>
+        </div>
+       
+        <div class="LogOut">
+            <a href="index.html" class="logout-link" onclick="alert('Log Out Succesfully')">Log Out</a>
+        </div>          
+      </div>
+      <div class="container">
+        <div class="balance">
+          <p>Net Balance: <span id="net-balance">₹0</span></p>
+          <p>Income: <span id="income">₹0</span> | Expenses: <span id="expenses">₹0</span></p>
+        </div>
+        <div class="form">
+          <select id="type">
+            <option value="Income">Income</option>
+            <option value="Expense">Expense</option>
+          </select>
+          <input type="text" id="description" placeholder="Description">
+          <input type="number" id="amount" placeholder="Amount">
+          <button id="add-btn">Add</button>
+        </div>
+        <div class="transactions">
+            <h3>Transactions</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="transaction-list">
+                <!-- Rows will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>  
+          <div>
+            <h3>Income vs. Expenses</h3>
+            <canvas id="expenseChart"></canvas>
+          </div>        
+      </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

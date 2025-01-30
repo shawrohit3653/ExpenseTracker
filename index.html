@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpenseTracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form id="authForm">
+          <h1>Expense Tracker AI</h1>
+          <h2 id="formHeading">Sign Up</h2>
+
+          <div id="signupFields" class="hidden">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div id="confirmPasswordField" class="form-group hidden">
+            <label for="cpass">Confirm Password</label>
+            <input
+              type="password"
+              name="cpassword"
+              id="cpass"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="formButton" class="btn">Register</button>
+            <button type="button" id="toggleForm" class="btn-secondary">
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="pic">
+        <img
+          src="signup.jpg"
+          alt="Authentication Illustration"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

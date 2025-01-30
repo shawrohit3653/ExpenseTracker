@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #59c6be;
+    color: #ffffff;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1069c3;
+  }
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+  .balance {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .transactions {
+    margin: 20px 0;
+    background-color: #b7c9db;
+    border: 2px solid #1a2b3c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  .transactions h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  .transactions table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .transactions th, .transactions td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    font-size: 1.5rem;
+}
+  .transactions th {
+    background-color: #1a2b3c;
+    color: #ffffff;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .form input, .form select, .form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  .form input, .form select {
+    flex: 1;
+  }
+  .form button {
+    background-color: #4caf50;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .form button:hover {
+    background-color: #45a049;
+  }
+  .income td {
+    color: green;
+  }
+  .expense td {
+    color: red;
+  }
+  
+  .LogOut {
+    display: block;
+    list-style: none;
+  }
+  
+  .LogOut a {
+    color: white;
+    text-decoration: none; /* Removes underline */
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .LogOut a:hover {
+    color: #ff6347; /* Example hover effect */
+  }
+  canvas {
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+  }
+/* AI Panel Styles */
+.ai-panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #243647;
+    color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease;
+  }
+  
+  .ai-header {
+    padding: 10px;
+    background-color: #1a2b3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ai-header h3 {
+    margin: 0;
+  }
+  
+  .ai-header button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ai-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .ai-input {
+    display: flex;
+    padding: 10px;
+    background-color: #1a2b3c;
+  }
+  
+  .ai-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .ai-input button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ai-input button:hover {
+    background-color: #45a049;
+  }
+  
+  .ai-button {
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ai-button:hover {
+    background-color: #45a049;
+  }
+      
