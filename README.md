@@ -37,9 +37,6 @@
 2. Open `index.html` in your browser.
 3. Sign up or log in to start tracking your expenses! 🔐💵
 
-## 📜 License
-This project is licensed under the MIT License.
-
 ---
 💡 _Stay on top of your finances with Expense Tracker!_ 🚀
 
